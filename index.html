@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>苏梓婷 / Suziting — 软件测试工程师</title>
+    <meta name="description" content="苏梓婷个人简介 — 软件测试工程师方向，广西外国语学院计算机科学与技术专业">
+
+    <!-- Google Fonts: Inter + Noto Sans for multi-language -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Sans+Thai:wght@300;400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Scroll progress bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ===== Navigation ===== -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="#hero" class="nav-logo" data-i18n="nav.logo">苏梓婷</a>
+        <div class="nav-links" id="navLinks">
+            <a href="#about" class="nav-link" data-i18n="nav.about">方向</a>
+            <a href="#skills" class="nav-link" data-i18n="nav.skills">技能</a>
+            <a href="#projects" class="nav-link" data-i18n="nav.projects">项目</a>
+            <a href="#campus" class="nav-link" data-i18n="nav.campus">校园</a>
+            <a href="#contact" class="nav-link" data-i18n="nav.contact">联系</a>
+            <a href="#script" class="nav-link nav-link--accent" data-i18n="nav.script">演讲稿</a>
+        </div>
+        <div class="lang-switcher" id="langSwitcher">
+            <button class="lang-btn active" data-lang="zh" title="中文">中</button>
+            <button class="lang-btn" data-lang="en" title="English">EN</button>
+            <button class="lang-btn" data-lang="th" title="ภาษาไทย">ไทย</button>
+            <button class="lang-btn" data-lang="ko" title="한국어">한</button>
+            <button class="lang-btn" data-lang="ja" title="日本語">日</button>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- ===== ① Hero Section ===== -->
+<section class="hero" id="hero">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-container">
+        <div class="hero-text reveal">
+            <p class="hero-greeting" data-i18n="hero.greeting">你好，我是</p>
+            <h1 class="hero-name">苏梓婷 <span class="hero-name-en">Suziting</span></h1>
+            <div class="hero-info">
+                <p class="hero-info-item" data-i18n="hero.school">广西外国语学院</p>
+                <span class="hero-info-dot">·</span>
+                <p class="hero-info-item" data-i18n="hero.major">计算机科学与技术</p>
+                <span class="hero-info-dot">·</span>
+                <p class="hero-info-item" data-i18n="hero.graduation">2027年6月毕业</p>
+            </div>
+            <p class="hero-tagline" data-i18n="hero.tagline">软件测试方向 · 追求品质与细节</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary" data-i18n="hero.ctaProjects">查看项目</a>
+                <a href="#contact" class="btn btn-outline" data-i18n="hero.ctaContact">联系方式</a>
+            </div>
+        </div>
+        <div class="hero-photo-wrap reveal">
+            <div class="hero-photo-ring"></div>
+            <div class="hero-photo-frame">
+                <img src="assets/profile.jpg" alt="苏梓婷" class="hero-photo">
+            </div>
+        </div>
+    </div>
+    <div class="hero-scroll-hint">
+        <span class="scroll-line"></span>
+        <span data-i18n="hero.scroll">向下滚动</span>
+    </div>
+</section>
+
+<!-- ===== ② Major & Interest ===== -->
+<section class="section" id="about">
+    <div class="section-container">
+        <div class="section-header reveal">
+            <span class="section-number">02</span>
+            <h2 class="section-title" data-i18n="about.title">专业方向与兴趣</h2>
+            <p class="section-subtitle" data-i18n="about.subtitle">为什么选择软件测试</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-card reveal">
+                <div class="about-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+                    </svg>
+                </div>
+                <h3 data-i18n="about.direction">专业方向</h3>
+                <p data-i18n="about.directionText">软件测试工程师 — 专注功能测试、接口测试与数据库测试，具备完整的测试流程能力</p>
+            </div>
+            <div class="about-card reveal">
+                <div class="about-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/>
+                    </svg>
+                </div>
+                <h3 data-i18n="about.why">为什么热爱</h3>
+                <p data-i18n="about.whyText">享受找问题的过程，喜欢抠细节、追根因。耐心细致是我的性格底色，也是测试工作的天然优势</p>
+            </div>
+            <div class="about-card reveal">
+                <div class="about-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/>
+                    </svg>
+                </div>
+                <h3 data-i18n="about.advantage">独特优势</h3>
+                <p data-i18n="about.advantageText">懂开发——能读Vue3组件和微信小程序代码，定位渲染、缓存、路由类缺陷更快，与开发沟通更高效</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== ③ Tech Skills ===== -->
+<section class="section section--alt" id="skills">
+    <div class="section-container">
+        <div class="section-header reveal">
+            <span class="section-number">03</span>
+            <h2 class="section-title" data-i18n="skills.title">专业技术技能</h2>
+            <p class="section-subtitle" data-i18n="skills.subtitle">从测试设计到工具链的完整能力栈</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card reveal">
+                <div class="skill-card-header">
+                    <span class="skill-icon">🧪</span>
+                    <h3 data-i18n="skills.funcTest">功能测试</h3>
+                </div>
+                <p class="skill-desc" data-i18n="skills.funcTestDesc">熟悉需求分析→用例设计→执行→缺陷跟踪→回归→总结全流程</p>
+                <div class="skill-tags">
+                    <span class="tag">等价类</span>
+                    <span class="tag">边界值</span>
+                    <span class="tag">场景法</span>
+                    <span class="tag">错误推测法</span>
+                </div>
+            </div>
+            <div class="skill-card reveal">
+                <div class="skill-card-header">
+                    <span class="skill-icon">🔌</span>
+                    <h3 data-i18n="skills.apiTest">接口/数据库测试</h3>
+                </div>
+                <p class="skill-desc" data-i18n="skills.apiTestDesc">理解RESTful API与HTTP/HTTPS协议，熟练使用Postman与MySQL</p>
+                <div class="skill-tags">
+                    <span class="tag">Postman</span>
+                    <span class="tag">RESTful API</span>
+                    <span class="tag">MySQL多表联查</span>
+                    <span class="tag">模糊查询</span>
+                </div>
+            </div>
+            <div class="skill-card reveal">
+                <div class="skill-card-header">
+                    <span class="skill-icon">📱</span>
+                    <h3 data-i18n="skills.webTest">Web与小程序测试</h3>
+                </div>
+                <p class="skill-desc" data-i18n="skills.webTestDesc">熟悉Vue3与微信小程序开发原理，擅长定位渲染、缓存、路由跳转类缺陷</p>
+                <div class="skill-tags">
+                    <span class="tag">Vue3</span>
+                    <span class="tag">微信小程序</span>
+                    <span class="tag">兼容性测试</span>
+                    <span class="tag">缓存一致性</span>
+                </div>
+            </div>
+            <div class="skill-card reveal">
+                <div class="skill-card-header">
+                    <span class="skill-icon">🛠️</span>
+                    <h3 data-i18n="skills.tools">编程与工具</h3>
+                </div>
+                <p class="skill-desc" data-i18n="skills.toolsDesc">Python（计算机二级），熟练使用测试与开发工具链</p>
+                <div class="skill-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Git</span>
+                    <span class="tag">IDEA</span>
+                    <span class="tag">VS Code</span>
+                    <span class="tag">Selenium</span>
+                    <span class="tag">禅道</span>
+                    <span class="tag">Excel</span>
+                </div>
+            </div>
+        </div>
+        <div class="courses-bar reveal">
+            <h4 data-i18n="skills.courses">主修课程</h4>
+            <div class="course-tags">
+                <span class="course-tag" data-i18n="skills.course1">数据库原理</span>
+                <span class="course-tag" data-i18n="skills.course2">数据结构</span>
+                <span class="course-tag" data-i18n="skills.course3">计算机网络</span>
+                <span class="course-tag" data-i18n="skills.course4">操作系统</span>
+                <span class="course-tag" data-i18n="skills.course5">Vue.js 3</span>
+                <span class="course-tag" data-i18n="skills.course6">微信小程序开发</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== ④ Projects (★ Core) ===== -->
+<section class="section" id="projects">
+    <div class="section-container">
+        <div class="section-header reveal">
+            <span class="section-number section-number--accent">04</span>
+            <div class="section-title-row">
+                <span class="star-badge">★</span>
+                <h2 class="section-title" data-i18n="projects.title">项目与实践经历</h2>
+            </div>
+            <p class="section-subtitle" data-i18n="projects.subtitle">真实测试项目，覆盖功能、接口、兼容性全链路</p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card reveal">
+                <div class="project-card-top">
+                    <span class="project-number">01</span>
+                    <span class="project-date" data-i18n="projects.p1.date">2025.10 — 2025.12</span>
+                </div>
+                <h3 class="project-title" data-i18n="projects.p1.title">SpringBoot+Vue3 前后端分离电商购物系统</h3>
+                <div class="project-subtitle" data-i18n="projects.p1.subtitle">功能与接口测试</div>
+                <div class="project-role">
+                    <span class="role-badge" data-i18n="projects.p1.role">测试工程师</span>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">SpringBoot</span>
+                    <span class="tech-tag">MyBatis</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Vue3</span>
+                    <span class="tech-tag">Postman</span>
+                </div>
+                <p class="project-desc" data-i18n="projects.p1.desc">设计功能用例60余条；Postman测试10余个RESTful接口，提交缺陷3个；多表联查SQL发现外键约束缺失导致脏数据1处</p>
+                <div class="project-achievement">
+                    <span class="achievement-icon">✓</span>
+                    <span data-i18n="projects.p1.achievement">核心用例通过率100%</span>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card reveal">
+                <div class="project-card-top">
+                    <span class="project-number">02</span>
+                    <span class="project-date" data-i18n="projects.p2.date">2025.11 — 2025.12</span>
+                </div>
+                <h3 class="project-title" data-i18n="projects.p2.title">微信云开发校园失物招领小程序</h3>
+                <div class="project-subtitle" data-i18n="projects.p2.subtitle">功能遍历与兼容性测试</div>
+                <div class="project-role">
+                    <span class="role-badge" data-i18n="projects.p2.role">测试工程师</span>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">微信小程序</span>
+                    <span class="tech-tag">云函数</span>
+                    <span class="tech-tag">云数据库</span>
+                </div>
+                <p class="project-desc" data-i18n="projects.p2.desc">7个页面60余个检查点功能遍历；设计弱网、授权拒绝、分页边界异常用例；复现"本地缓存与云端收藏状态不一致"缺陷；完成多机型兼容性测试</p>
+                <div class="project-achievement">
+                    <span class="achievement-icon">✓</span>
+                    <span data-i18n="projects.p2.achievement">发现并复现缓存一致性缺陷，完成兼容性测试</span>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card reveal">
+                <div class="project-card-top">
+                    <span class="project-number">03</span>
+                    <span class="project-date" data-i18n="projects.p3.date">2025.10 — 2025.11</span>
+                </div>
+                <h3 class="project-title" data-i18n="projects.p3.title">Vue3+Pinia 学生信息管理系统</h3>
+                <div class="project-subtitle" data-i18n="projects.p3.subtitle">前端专项测试</div>
+                <div class="project-role">
+                    <span class="role-badge" data-i18n="projects.p3.role">测试工程师</span>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">Vue3</span>
+                    <span class="tech-tag">VueRouter</span>
+                    <span class="tech-tag">Pinia</span>
+                    <span class="tech-tag">Vite</span>
+                </div>
+                <p class="project-desc" data-i18n="projects.p3.desc">学生CRUD、动态路由传参、表单校验执行用例；验证Pinia持久化状态一致性；对空数据、超长输入、特殊字符边界用错误推测法测试</p>
+                <div class="project-achievement">
+                    <span class="achievement-icon">✓</span>
+                    <span data-i18n="projects.p3.achievement">前端专项测试覆盖全面</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== ⑤ Campus & Soft Skills ===== -->
+<section class="section section--alt" id="campus">
+    <div class="section-container">
+        <div class="section-header reveal">
+            <span class="section-number">05</span>
+            <h2 class="section-title" data-i18n="campus.title">校园经历与软技能</h2>
+            <p class="section-subtitle" data-i18n="campus.subtitle">学业表现与组织能力</p>
+        </div>
+
+        <div class="campus-grid">
+            <!-- Rankings & Awards -->
+            <div class="campus-card reveal">
+                <h3 class="campus-card-title" data-i18n="campus.awardsTitle">荣誉奖项</h3>
+                <div class="award-list">
+                    <div class="award-item">
+                        <span class="award-year">2025</span>
+                        <span data-i18n="campus.award1">国家励志奖学金</span>
+                    </div>
+                    <div class="award-item">
+                        <span class="award-year">2026</span>
+                        <span data-i18n="campus.award2">中国-东盟AI安全攻防大赛全区第八名</span>
+                    </div>
+                    <div class="award-item">
+                        <span class="award-year">2024</span>
+                        <span data-i18n="campus.award3">筑梦奖学金 · 校级三好学生</span>
+                    </div>
+                    <div class="award-item">
+                        <span class="award-year">2023</span>
+                        <span data-i18n="campus.award4">校级奖学金</span>
+                    </div>
+                    <div class="award-item">
+                        <span class="award-year">2025</span>
+                        <span data-i18n="campus.award5">优秀共青团员</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ranking highlight -->
+            <div class="campus-highlight reveal">
+                <div class="ranking-circle">
+                    <span class="ranking-number">9%</span>
+                    <span class="ranking-label" data-i18n="campus.rankingLabel">专业排名前</span>
+                </div>
+                <p class="ranking-detail" data-i18n="campus.rankingDetail">31 / 354</p>
+            </div>
+
+            <!-- Campus roles -->
+            <div class="campus-card reveal">
+                <h3 class="campus-card-title" data-i18n="campus.rolesTitle">校园职务</h3>
+                <div class="role-list">
+                    <div class="role-item">
+                        <div class="role-dot"></div>
+                        <div>
+                            <p class="role-name" data-i18n="campus.role1">技术竞赛部部长</p>
+                            <p class="role-detail" data-i18n="campus.role1Desc">学院团委学生会 — 策划代码表白大赛、电脑义务维修等活动</p>
+                        </div>
+                    </div>
+                    <div class="role-item">
+                        <div class="role-dot"></div>
+                        <div>
+                            <p class="role-name" data-i18n="campus.role2">班级学习委员</p>
+                            <p class="role-detail" data-i18n="campus.role2Desc">大三至大四 — 负责考勤统计、教务传达与资料分发</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="soft-skills-bar reveal">
+            <div class="soft-skill">
+                <span class="soft-skill-icon">🤝</span>
+                <span data-i18n="campus.softSkill1">团队协作 — 能独立完成全栈项目，也能与团队高效沟通</span>
+            </div>
+            <div class="soft-skill">
+                <span class="soft-skill-icon">📚</span>
+                <span data-i18n="campus.softSkill2">快速学习 — 掌握多种技术栈，适应快速变化的技术环境</span>
+            </div>
+            <div class="soft-skill">
+                <span class="soft-skill-icon">🎯</span>
+                <span data-i18n="campus.softSkill3">责任心强 — 耐心细致，意向长期从事软件测试方向</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== ⑥ Goal & Closing ===== -->
+<section class="section" id="contact">
+    <div class="section-container">
+        <div class="section-header reveal">
+            <span class="section-number">06</span>
+            <h2 class="section-title" data-i18n="contact.title">求职目标与联系方式</h2>
+            <p class="section-subtitle" data-i18n="contact.subtitle">期待加入您的团队</p>
+        </div>
+
+        <div class="contact-content reveal">
+            <div class="contact-goal">
+                <h3 data-i18n="contact.target">目标职位</h3>
+                <p class="contact-position" data-i18n="contact.position">软件测试工程师（校招/实习）</p>
+                <p class="contact-willingness" data-i18n="contact.willingness">愿意学习与成长，具备测试思维，善于挖掘边界与异常场景</p>
+            </div>
+
+            <div class="contact-info">
+                <a href="mailto:2946265487@qq.com" class="contact-item">
+                    <!-- NOTE: Replace email below with your real email if needed -->
+                    <span class="contact-icon">✉</span>
+                    <span>2946265487@qq.com</span>
+                </a>
+                <a href="tel:18178437195" class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <span>181-7843-7195</span>
+                </a>
+                <div class="contact-item contact-item--text">
+                    <span class="contact-icon">📍</span>
+                    <span data-i18n="contact.location">广西梧州</span>
+                </div>
+            </div>
+
+            <div class="contact-cta">
+                <p class="cta-text" data-i18n="contact.ctaText">感谢您的阅读！欢迎随时联系，期待与您进一步交流。</p>
+                <a href="mailto:2946265487@qq.com" class="btn btn-primary btn-lg" data-i18n="contact.ctaBtn">欢迎联系！</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== ⑦ Self-Introduction Script ===== -->
+<section class="section section--script" id="script">
+    <div class="section-container">
+        <div class="section-header reveal">
+            <span class="section-number">07</span>
+            <h2 class="section-title" data-i18n="script.title">自我介绍演讲稿</h2>
+            <p class="section-subtitle" data-i18n="script.subtitle">3分钟英文自我介绍 · 6段式框架 · 5语言版本</p>
+        </div>
+
+        <div class="script-tabs reveal" id="scriptTabs">
+            <button class="script-tab active" data-script-lang="en">English</button>
+            <button class="script-tab" data-script-lang="zh">中文</button>
+            <button class="script-tab" data-script-lang="th">ภาษาไทย</button>
+            <button class="script-tab" data-script-lang="ko">한국어</button>
+            <button class="script-tab" data-script-lang="ja">日本語</button>
+        </div>
+
+        <div class="script-content reveal" id="scriptContent">
+            <!-- Script content injected by JS -->
+        </div>
+
+        <div class="script-actions reveal">
+            <button class="btn btn-outline" id="copyScriptBtn" data-i18n="script.copyBtn">复制演讲稿</button>
+            <span class="copy-feedback" id="copyFeedback" data-i18n="script.copied">已复制！</span>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+    <div class="footer-container">
+        <p class="footer-name">苏梓婷 / Suziting</p>
+        <p class="footer-info" data-i18n="footer.info">广西外国语学院 · 计算机科学与技术 · 2027届</p>
+        <p class="footer-copy">© 2026 Suziting. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
